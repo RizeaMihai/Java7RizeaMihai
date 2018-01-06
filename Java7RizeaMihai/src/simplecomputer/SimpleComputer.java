@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author gheor
+ * @author Mihai Rizea
  */
 public class SimpleComputer {
 
