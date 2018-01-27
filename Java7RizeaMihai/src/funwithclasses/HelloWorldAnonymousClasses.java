@@ -32,7 +32,7 @@ public class HelloWorldAnonymousClasses {
  // create an EnglishGreeting object/instance
  HelloWorld englishGreeting = new EnglishGreeting();
  // create an anonimous class that greets in French language
- HelloWorld frenchGreeting = null;// end of anonimous class
+ //HelloWorld frenchGreeting // end of anonimous class
  class FrenchGreeting implements HelloWorld {
  String name = "tout le monde";
  @Override
@@ -44,8 +44,9 @@ public class HelloWorldAnonymousClasses {
  name = someone;
  System.out.println("Salut " + name);
  }};
+  HelloWorld frenchGreeting = new FrenchGreeting();
   // create an anonimous class for Spanish language
- HelloWorld spanishGreeting = null;
+ //HelloWorld spanishGreeting;
  class SpanishGreeting implements HelloWorld {
  String name = "mundo";
  @Override
@@ -58,6 +59,7 @@ public class HelloWorldAnonymousClasses {
  System.out.println("Hola, " + name);
  } // end of anonymous class
  };
+ HelloWorld spanishGreeting = new SpanishGreeting();
  englishGreeting.greet();
  frenchGreeting.greetSomeone("Fred");
  spanishGreeting.greet();
